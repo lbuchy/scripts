@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Finding .c and .h files..."
+find . -name "*.[ch]" > cscope.files
+echo "Making cscope database"
+cscope -b -k -q
